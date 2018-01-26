@@ -169,7 +169,9 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml
 
 # Memtrack
-PRODUCT_PACKAGES += android.hardware.memtrack@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service
 
 # Misc
 PRODUCT_PACKAGES += \
