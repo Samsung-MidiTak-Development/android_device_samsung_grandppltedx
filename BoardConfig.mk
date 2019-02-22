@@ -26,6 +26,9 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 ARCH_ARM_HAVE_VFP := true
 ARCH_ARM_HAVE_NEON := true
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := grandpplte,grandppltedx,grandpplteub,grandpplteser,grandppltedtvvj
 
