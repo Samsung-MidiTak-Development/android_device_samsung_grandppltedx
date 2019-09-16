@@ -63,6 +63,10 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/audio/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml
 #	$(DEVICE_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
 
+# APEX
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/swcodec/ld.config.txt
+
 # Charger
 # Use cm/lineage images if available, aosp ones otherwise
 PRODUCT_PACKAGES += \
