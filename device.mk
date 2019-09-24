@@ -257,6 +257,9 @@ PRODUCT_PACKAGES += \
 	init.xlog.rc \
 	log.sh
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6735:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6735
+
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/grandppltedx/configs/init,$(TARGET_COPY_OUT_VENDOR)/etc/init)
 
 # RenderScript
