@@ -102,6 +102,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.egl=mali \
+    ro.hardware.vulkan=mali \
     debug.sf.enable_gl_backpressure=1
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
