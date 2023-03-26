@@ -192,6 +192,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libshim_gps \
 	libshim_camera \
+	libshim_nv21e_camera \
 	libshim_vt \
 	libshim_xlog \
 	libshim_asc \
