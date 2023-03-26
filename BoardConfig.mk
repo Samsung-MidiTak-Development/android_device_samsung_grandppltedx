@@ -166,17 +166,17 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
 
 # Move symlinks here
 TARGET_LD_SHIM_LIBS := \
-	/system/vendor/bin/mtk_agpsd|libshim_gps.so \
-	/system/vendor/lib/libcam.utils.sensorlistener.so|libandroid.so \
-	/system/vendor/lib/libcam_utils.so|libshim_nv21e_camera.so \
-	/system/vendor/lib/libcam_utils.so|libshim_camera.so \
-	/system/vendor/lib/libcam_utils.so|libshim_gui.so \
-	/system/vendor/lib/liblog.so|libshim_xlog.so \
-	/system/vendor/lib/libui_ext.so|libshim_gui.so \
-	/system/vendor/lib/libgui_ext.so|libshim_gui.so \
-	/system/vendor/lib/audio.primary.mt6737t.so|libshim_audio.so \
-	/system/vendor/bin/thermal|libshim_ifc.so \
-	/system/vendor/bin/libdpframework.so|libshim_xlog.so
+	/vendor/bin/mtk_agpsd|libshim_gps.so \
+	/vendor/lib/libcam.utils.sensorlistener.so|libandroid.so \
+	/vendor/lib/libcam_utils.so|libshim_nv21e_camera.so \
+	/vendor/lib/libcam_utils.so|libshim_camera.so \
+	/vendor/lib/libcam_utils.so|libshim_gui.so \
+	/system/lib/liblog.so|libshim_xlog.so \
+	/vendor/lib/libui_ext.so|libshim_gui.so \
+	/vendor/lib/libgui_ext.so|libshim_gui.so \
+	/vendor/lib/audio.primary.mt6737t.so|libshim_audio.so \
+	/vendor/bin/thermal|libshim_ifc.so \
+	/vendor/lib/libdpframework.so|libshim_xlog.so
 
 LD_PRELOADS += mtk_symbols.so
 
