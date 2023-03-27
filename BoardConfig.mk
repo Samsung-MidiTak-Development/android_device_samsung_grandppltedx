@@ -214,7 +214,6 @@ BOARD_MEDIATEK_USES_GPS := true
 TARGET_BUILD_MTK_RIL := true
 BOARD_PROVIDES_RILD := true
 BOARD_PROVIDES_LIBRIL := true
-BOARD_RIL_CLASS := ../../../device/samsung/grandppltedx/ril
 #BOARD_CONNECTIVITY_MODULE := conn_soc
 
 # Power HAL

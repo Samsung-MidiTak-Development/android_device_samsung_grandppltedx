@@ -177,7 +177,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.kernel.android.checkjni=0 \
-	ro.telephony.ril_class=grandpplteRIL
 
 #-- FM
 MTK_FM_SUPPORT := true
@@ -324,8 +323,6 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/rootdir/sbin/busybox:root/sbin/busybox
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	rild.libpath=/system/lib/libsec-ril.so \
-	rild.libpath2=/system/lib/libsec-ril-dsds.so \
 	ro.zygote=zygote32 \
 	ro.mount.fs=EXT4 \
 	ro.adb.secure=0 \
