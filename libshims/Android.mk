@@ -32,7 +32,7 @@ include $(BUILD_SHARED_LIBRARY)
 # Samsung Camera Shim
 include $(CLEAR_VARS)
 
-LOCAL_SRC_FILES := camera/camera_nv21e_shim.c
+LOCAL_SRC_FILES := camera/libshim_nv21e_camera.c
 
 LOCAL_MODULE := libshim_nv21e_camera
 LOCAL_MODULE_TAGS := optional
