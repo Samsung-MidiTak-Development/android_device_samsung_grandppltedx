@@ -18,9 +18,6 @@ DEVICE_PATH := device/samsung/grandppltedx
 VENDOR_PATH := vendor/samsung/grandppltedx
 BOARD_VENDOR := samsung
 
-# Binder API version
-TARGET_USES_64_BIT_BINDER := true
-
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
