@@ -16,4 +16,3 @@ on property:service.vpnclientd.enable=1
 	start vpnclientd
 on property:service.vpnclientd.enable=0
 	stop vpnclientd
-

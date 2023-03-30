@@ -207,8 +207,8 @@ on post-fs-data
     # Separate location for storing security policy files on data
     mkdir /data/security 0710 system system_access
     
-    restorecon_recursive -R /efs
-    restorecon_recursive -R /carrier
+    restorecon -R /efs
+    restorecon -R /carrier
     
 on boot
 
@@ -613,7 +613,7 @@ service compact_memory /sbin/bgcompact
 ## Daemon processes to be run by init.
 ##
 # deferred initcall
-service sec-sh /system/etc/init.sec.boot.sh
+service sec-sh /vendor/etc/init.sec.boot.sh
     class core
     user root
     oneshot
@@ -645,19 +645,13 @@ service drm /system/bin/drmserver
 #    group drm system inet drmrpc
 # ]
 
-# Sensorhub service
-service sensorhubservice /system/bin/sensorhubservice
-    class main
-    user system
-    group input
-
 # for Bluetooth Tethering
-service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
+service dhcpcd_bt-pan /vendor/bin/dhcpcd -ABKL
     class main
     disabled
     oneshot
 
-service iprenew_bt-pan /system/bin/dhcpcd -n
+service iprenew_bt-pan /vendor/bin/dhcpcd -n
     class late_start
     disabled
     oneshot
