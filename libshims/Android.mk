@@ -10,7 +10,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_SHARED_LIBRARIES := \
 	liblog \
-	libicuuc \
+	libandroidicu \
 	libssl \
 	libcrypto
 
