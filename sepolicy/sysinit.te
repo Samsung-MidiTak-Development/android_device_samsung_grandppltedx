@@ -1,3 +1,4 @@
 # CM's init.d handler
 #allow sysinit rootfs:lnk_file { getattr };
 
+allow sysinit sysfs:dir { open read };

@@ -1,6 +1,7 @@
 #============= servicemanager ==============
-# 2018/1/6: daniel_hk(danielhk@github.com)
+# HoangLong
 allow servicemanager hal_camera_default:file { open read };
 allow servicemanager hal_camera_default:dir { search };
 allow servicemanager hal_camera_default:process { getattr };
 
+allow servicemanager block_device:blk_file { ioctl getattr open read write };

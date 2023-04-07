@@ -82,3 +82,6 @@ allow untrusted_app mtk_mwblacklist_service:service_manager find;
 # Purpose : Allow third party app connects to md_monitor's local socket
 # package:com.hugeland.mtktracer
 #allow untrusted_app md_monitor:unix_stream_socket connectto;
+
+# O
+allow untrusted_app proc:file { ioctl open read };

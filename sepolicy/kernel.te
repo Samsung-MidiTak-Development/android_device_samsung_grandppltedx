@@ -54,6 +54,9 @@ allow kernel nvram_data_file:lnk_file read;
 # Purpose : grant proc_thermal for dir search
 allow kernel proc_thermal:dir search;
 
-# 2017/7/22: daniel_hk(danielhk@github.com)
+# HoangLong
 # O
-
+allow kernel self:capability dac_override;
+allow kernel system_data_file:file { open write };
+allow kernel unlabeled:file { open read };
+allow kernel wifi_data_file:file write;
