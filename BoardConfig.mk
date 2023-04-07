@@ -73,6 +73,7 @@ PRODUCT_SHIPPING_API_LEVEL := 23
 
 # Liblight
 TARGET_PROVIDES_LIBLIGHT := true
+TARGET_HAS_BACKLIT_KEYS := false
 
 # Gatekeeper
 BOARD_USE_SOFT_GATEKEEPER := true
@@ -90,6 +91,7 @@ TARGET_HAS_BACKLIT_KEYS := false
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_SHOW_PERCENTAGE := true
+BOARD_NO_CHARGER_LED := true
 CHARGING_ENABLED_PATH := /sys/class/power_supply/battery/batt_lp_charging
 
 # Architecture
