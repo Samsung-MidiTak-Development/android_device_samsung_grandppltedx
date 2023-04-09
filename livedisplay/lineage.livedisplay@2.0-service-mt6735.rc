@@ -1,0 +1,9 @@
+on init
+    # LiveDisplay
+    chown system system /sys/devices/platform/mtk_disp_mgr.0/rgb
+    chmod 0660 /sys/devices/platform/mtk_disp_mgr.0/rgb
+
+service livedisplay-hal-2-0-mt6735 /system/bin/hw/lineage.livedisplay@2.0-service-mt6735
+    class hal
+    user system
+    group system
