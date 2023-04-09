@@ -3,10 +3,11 @@
 -----
 WORKING: 
 * BOOT
-
-NOT WORKING: 
+* Vibrator
 * Wi-Fi
 * Wi-Fi Hostpot
+
+NOT WORKING: 
 * Bluetooth
 * Camera
 * RIL
