@@ -5,14 +5,7 @@ rootdirectory="$PWD"
 devicetree="device/samsung/grandppltedx"
 # ---------------------------------
 
-dirs="\
- bionic \
- build/make/core build/soong \
- frameworks/av frameworks/base frameworks/native
- hardware/interfaces hardware/ril \
- system/core system/sepolicy system/bt \
- external/wpa_supplicant_8 \
-"
+dirs="frameworks/av frameworks/base frameworks/native frameworks/opt/telephony hardware/interfaces packages/apps/FMRadio system/core system/netd"
 
 # red + nocolor
 RED='\033[0;31m'
