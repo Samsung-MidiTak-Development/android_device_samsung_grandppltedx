@@ -10,6 +10,7 @@ import /FWUpgradeInit.rc
 import init.xlog.rc
 import init.aee.rc
 import init.fon.rc
+import init.volte.rc
 import init.mal.rc
 import init.wfca.rc
 import init.epdg.rc
@@ -1017,7 +1018,7 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     #   after setting up the capabilities required for WEXT
     #   user wifi
     #   group wifi inet keystore
-    class late_start
+    class main
     socket wpa_wlan0 dgram 660 wifi wifi
     disabled
     oneshot
@@ -1206,10 +1207,10 @@ service thermald /system/bin/thermald
 
 service fuelgauged /vendor/bin/fuelgauged
     class main
-    user root
-    group root
+    user system
+    group system
 
-service sn /vendor/bin/sn
+service sn /system/bin/sn
     class late_start
     user system
     group system sdcard_rw
@@ -1217,9 +1218,12 @@ service sn /vendor/bin/sn
 
 # GuiExt Server init
 service guiext-server /vendor/bin/guiext-server
-    class core
-    user root
-    group system graphics media
+    class main
+    user system
+    group system graphics
+
+service kpoc_charger /system/bin/kpoc_charger
+    class charger
 
 ###########add for 3Gdongle
 

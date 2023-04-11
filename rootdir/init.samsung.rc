@@ -613,7 +613,7 @@ service compact_memory /sbin/bgcompact
 ## Daemon processes to be run by init.
 ##
 # deferred initcall
-service sec-sh /vendor/etc/init.sec.boot.sh
+service sec-sh /system/etc/init.sec.boot.sh
     class core
     user root
     oneshot
