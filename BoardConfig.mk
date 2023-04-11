@@ -174,10 +174,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.mt6735
 
 # RIL
-#> accompanies https://github.com/almondnguyen/android_device_samsung_grandppltedx/commit/5eacb461d71c013e97552f122f1ee28bed8b9d01
-TARGET_BUILD_MTK_RIL := true
+ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_PROVIDES_RILD := true
-BOARD_PROVIDES_LIBRIL := true
 
 # Seccomp
 BOARD_SECCOMP_POLICY += $(DEVICE_PATH)/seccomp
