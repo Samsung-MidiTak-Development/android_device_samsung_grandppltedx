@@ -74,15 +74,6 @@ TARGET_SCREEN_WIDTH := 540
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 
-# FM Radio
-MTK_FM_SUPPORT := true
-
-PRODUCT_PACKAGES += \
-	libfmjni \
-	FMRadio \
-	libfmcust \
-	radio.fm.mt6735
-
 # Graphics
 PRODUCT_PACKAGES += \
 	libion \
