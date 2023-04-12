@@ -87,6 +87,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 # HIDL Manifest
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_grandpplte
