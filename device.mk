@@ -98,8 +98,8 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Health HAL
 PRODUCT_PACKAGES += \
-	android.hardware.health@1.0-impl \
-	android.hardware.health@1.0-service
+	android.hardware.health@2.0-impl \
+	android.hardware.health@2.0-service
 
 # Init
 PRODUCT_PACKAGES += \
