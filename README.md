@@ -1,21 +1,8 @@
 # Device Tree for Samsung Galaxy J2 Prime
 
 -----
-WORKING: 
-* BOOT
-* Vibrator
-* Wi-Fi
-* Wi-Fi Hostpot
-
 NOT WORKING: 
-* Bluetooth
-* Camera
-* RIL
-* Audio
-* FM Radio
-* GPS
-* Sensor
-* And much more
+* BOOT
 
 DEVELOPMENT IN PROGRESS, MAY EAT YOUR CAT.
 
