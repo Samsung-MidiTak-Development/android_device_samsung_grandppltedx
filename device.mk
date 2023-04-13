@@ -77,7 +77,6 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 # Graphics
 PRODUCT_PACKAGES += \
 	libion \
-	libshim_gui \
 	android.hardware.graphics.allocator@2.0-impl \
 	android.hardware.graphics.allocator@2.0-service \
 	android.hardware.graphics.mapper@2.0-impl \
