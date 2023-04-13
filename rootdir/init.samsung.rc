@@ -6,8 +6,6 @@ on init
     # almond: start logcat locally, storing to /cache
     start cust-log
 
-    ffu
-
     # Create cgroup mount point for memory
     mount tmpfs none /sys/fs/cgroup mode=0750,uid=0,gid=1000
     mkdir /sys/fs/cgroup/memory 0750 root system
@@ -640,7 +638,7 @@ service drm /system/bin/drmserver
     user drm
 # [ SEC_MM_DRM
 # fix
-    group system drm inet drmrpc radio dpgp
+    group system drm inet drmrpc radio
 # org
 #    group drm system inet drmrpc
 # ]
