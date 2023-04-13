@@ -105,8 +105,8 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0-java
 
 # Init
-PRODUCT_PACKAGES += \
-	libinit_grandpplte
+#PRODUCT_PACKAGES += \
+#	libinit_grandpplte
 
 # Keymaster
 PRODUCT_PACKAGES += android.hardware.keymaster@3.0-impl

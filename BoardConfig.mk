@@ -94,7 +94,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_grandpplte
+#TARGET_INIT_VENDOR_LIB := libinit_grandpplte
 
 # Kernel
 BOARD_CUSTOM_BOOTIMG := true
