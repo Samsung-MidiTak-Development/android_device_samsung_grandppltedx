@@ -1,20 +1,22 @@
-From dd547d70b2a38fb3ef7184f9568053530a558266 Mon Sep 17 00:00:00 2001
-From: bilux <i.bilux@gmail.com>
-Date: Sun, 22 Mar 2020 21:58:25 +0100
-Subject: [PATCH] Disable vndk for omx
+From b2dabd5c4bb7269a93a97ec6d3797db1b0311a30 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Nguy=E1=BB=85n=20Long?= <hoanglong.lumi404@gmail.com>
+Date: Thu, 13 Apr 2023 05:54:32 +0000
+Subject: [PATCH 1/4] Disable vndk for omx
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
 
-Co-authored-by: Dinolek <18579460+Dinolek@users.noreply.github.com>
-Signed-off-by: bilux <i.bilux@gmail.com>
+Signed-off-by: Nguyễn Long <hoanglong.lumi404@gmail.com>
 ---
- services/mediacodec/main_codecservice.cpp | 6 ++++++
- 1 file changed, 6 insertions(+)
+ services/mediacodec/main_codecservice.cpp | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
 
 diff --git a/services/mediacodec/main_codecservice.cpp b/services/mediacodec/main_codecservice.cpp
-index 51619f6..5defdf3 100644
+index 6a82b1b..ea76f89 100644
 --- a/services/mediacodec/main_codecservice.cpp
 +++ b/services/mediacodec/main_codecservice.cpp
 @@ -28,6 +28,10 @@
- #include <media/CodecServiceRegistrant.h>
+ 
  #include <dlfcn.h>
  
 +#ifndef MTK_HARDWARE
@@ -24,17 +26,18 @@ index 51619f6..5defdf3 100644
  using namespace android;
  
  // Must match location in Android.mk.
-@@ -43,8 +47,10 @@ int main(int argc __unused, char** argv)
+@@ -43,9 +47,10 @@ int main(int argc __unused, char** argv)
      signal(SIGPIPE, SIG_IGN);
      SetUpMinijail(kSystemSeccompPolicyPath, kVendorSeccompPolicyPath);
  
 +#ifndef MTK_HARDWARE
      android::ProcessState::initWithDriver("/dev/vndbinder");
      android::ProcessState::self()->startThreadPool();
+-
 +#endif
- 
      ::android::hardware::configureRpcThreadpool(64, false);
  
+     // Default codec services
 -- 
-2.25.1
+2.40.0
 

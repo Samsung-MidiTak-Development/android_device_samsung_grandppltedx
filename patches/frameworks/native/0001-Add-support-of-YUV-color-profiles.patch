@@ -1,22 +1,21 @@
-From ea5c9dff2e2313a349dc7e79f9a45607b97ff4b6 Mon Sep 17 00:00:00 2001
-From: bilux <i.bilux@gmail.com>
-Date: Tue, 18 Feb 2020 11:31:29 +0100
+From b333420d5fdaa1a8183e29e55cf231367f43ddab Mon Sep 17 00:00:00 2001
+Nguyễn Long <hoanglong.lumi404@gmail.com>
+Date: Thu, 13 Apr 2023 06:19:12 +0000
 Subject: [PATCH] Add support of YUV color profiles
 
-Signed-off-by: bilux <i.bilux@gmail.com>
+Signed-off-by: Nguyễn Long <hoanglong.lumi404@gmail.com>
 ---
- headers/media_plugin/media/openmax/OMX_IVCommon.h | 13 +++++++++++++
- 1 file changed, 13 insertions(+)
+ headers/media_plugin/media/openmax/OMX_IVCommon.h | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
 
 diff --git a/headers/media_plugin/media/openmax/OMX_IVCommon.h b/headers/media_plugin/media/openmax/OMX_IVCommon.h
-index f83114b..0f952d6 100644
+index f83114b..e5cd552 100644
 --- a/headers/media_plugin/media/openmax/OMX_IVCommon.h
 +++ b/headers/media_plugin/media/openmax/OMX_IVCommon.h
-@@ -149,6 +149,19 @@ typedef enum OMX_COLOR_FORMATTYPE {
-     OMX_COLOR_Format24BitABGR6666,
-     OMX_COLOR_FormatKhronosExtensions = 0x6F000000, /**< Reserved region for introducing Khronos Standard Extensions */
-     OMX_COLOR_FormatVendorStartUnused = 0x7F000000, /**< Reserved region for introducing Vendor Extensions */
-+
+@@ -156,6 +156,17 @@ typedef enum OMX_COLOR_FORMATTYPE {
+      * Android-specific OMX IL colorformats. Change this enum to
+      * an acceptable range once that is done.
+      * */
 +// MTK
 +    OMX_COLOR_FormatVendorMTKYUV = 0x7F000001,
 +    OMX_COLOR_FormatVendorMTKYUV_FCM = 0x7F000002,
@@ -28,10 +27,9 @@ index f83114b..0f952d6 100644
 +    OMX_MTK_COLOR_FormatYV12 = 0x7F000200,
 +    OMX_MTK_COLOR_FormatBitStream = 0x7F000300,
 +// end MTK
-+
-     /**<Reserved android opaque colorformat. Tells the encoder that
-      * the actual colorformat will be  relayed by the
-      * Gralloc Buffers.
+     OMX_COLOR_FormatAndroidOpaque = 0x7F000789,
+     OMX_COLOR_Format32BitRGBA8888 = 0x7F00A000,
+     /** Flexible 8-bit YUV format.  Codec should report this format
 -- 
-2.25.1
+2.40.0
 

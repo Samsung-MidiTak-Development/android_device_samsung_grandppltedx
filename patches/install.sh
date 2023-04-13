@@ -5,7 +5,7 @@ rootdirectory="$PWD"
 devicetree="device/samsung/grandppltedx"
 # ---------------------------------
 
-dirs="frameworks/av frameworks/base frameworks/native frameworks/opt/telephony hardware/interfaces packages/apps/FMRadio system/core system/netd"
+dirs="bionic frameworks/av frameworks/base frameworks/native hardware/interfaces system/core system/netd"
 
 # red + nocolor
 RED='\033[0;31m'
