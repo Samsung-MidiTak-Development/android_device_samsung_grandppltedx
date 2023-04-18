@@ -240,5 +240,5 @@ WITHOUT_CHECK_API := true
 
 #-- Disable ODEX
 #-- not buildable on Jammy
-WITH_DEXPREOPT := false
-DONT_DEXPREOPT_PREBUILTS := true
+#WITH_DEXPREOPT := false
+#DONT_DEXPREOPT_PREBUILTS := true
