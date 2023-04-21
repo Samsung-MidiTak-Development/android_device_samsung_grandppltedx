@@ -33,6 +33,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_OTA_ASSERT_DEVICE := grandpplte,grandppltedx,grandpplteub,grandpplteser,grandppltedtvvj
 
 # Audio
+USE_XML_AUDIO_POLICY_CONF := 1
 BOARD_USES_MTK_AUDIO := true
 BOARD_USES_LEGACY_MTK_AV_BLOB := true
 SUPPRESS_MTK_AUDIO_BLOB_ERR_MSG := true
