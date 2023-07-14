@@ -105,6 +105,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.media.treble_omx=false
 
+# DRM HAL
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.1-service.widevine \
+    android.hardware.drm@1.1-service.clearkey \
+    move_widevine_data.sh
+
 # Seccomp
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \

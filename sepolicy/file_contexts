@@ -59,6 +59,7 @@
 /data/setkey_latest.conf u:object_r:ims_ipsec_data_file:s0
 /data/key_provisioning(/.*)?         u:object_r:key_install_data_file:s0
 /data/thh(/.*)? u:object_r:teei_data_file:s0
+/data/vendor/mediadrm(/.*)?            u:object_r:mediadrm_vendor_data_file:s0
 
 ##########################
 # Devices
@@ -499,3 +500,10 @@
 
 #fat on nand image
 /fat(/.*)?  u:object_r:fon_image_data_file:s0
+
+# file in /system
+/system/bin/move_widevine_data\.sh              u:object_r:move-widevine-data-sh_exec:s0
+
+# files in /vendor
+/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.widevine          u:object_r:hal_drm_widevine_exec:s0
+/vendor/bin/hw/android\.hardware\.drm@1\.1-service\.clearkey          u:object_r:hal_drm_clearkey_exec:s0
