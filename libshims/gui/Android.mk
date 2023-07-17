@@ -26,4 +26,5 @@ LOCAL_C_INCLUDES += system/core/include/ frameworks/av/include/ hardware/libhard
 
 LOCAL_MODULE := libshim_gui
 LOCAL_PROPRIETARY_MODULE := true
+
 include $(BUILD_SHARED_LIBRARY)

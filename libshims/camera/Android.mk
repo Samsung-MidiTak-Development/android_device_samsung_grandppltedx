@@ -35,4 +35,5 @@ LOCAL_MODULE := libshim_mmsdk
 LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS := -O3 -Wno-unused-variable -Wno-unused-parameter
 LOCAL_PROPRIETARY_MODULE := true
+
 include $(BUILD_SHARED_LIBRARY)
