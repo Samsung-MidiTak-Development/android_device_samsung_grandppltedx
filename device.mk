@@ -270,7 +270,9 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service
 
 # Memtrack
-PRODUCT_PACKAGES += android.hardware.memtrack@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service
 
 # Health HAL
 PRODUCT_PACKAGES += \
