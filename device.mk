@@ -121,6 +121,7 @@ PRODUCT_COPY_FILES += \
 #-- BT
 PRODUCT_PACKAGES += \
 	android.hardware.bluetooth@1.0-impl
+	android.hardware.bluetooth@1.0-service \
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.bluetooth_le.xml \
