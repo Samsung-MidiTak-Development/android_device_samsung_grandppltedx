@@ -123,6 +123,10 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
 	$(DEVICE_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
+# Configstore
+PRODUCT_PACKAGES += \
+    android.hardware.configstore@1.0-service
+
 #-- BT
 PRODUCT_PACKAGES += \
 	android.hardware.bluetooth@1.0-impl
