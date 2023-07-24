@@ -150,7 +150,6 @@ TARGET_LD_SHIM_LIBS := \
 	/system/lib/libcam_utils.so|libshim_camera.so \
 	/system/lib/libcam_utils.so|libshim_gui.so \
 	/system/lib/libmmsdkservice.feature.so|libshim_mmsdk.so \
-	/system/lib/liblog.so|libshim_xlog.so \
 	/system/lib/libui_ext.so|libshim_gui.so \
 	/system/lib/libgui_ext.so|libshim_gui.so \
 	/system/lib/libaudio_param_parser.so|libshim_gps.so \
